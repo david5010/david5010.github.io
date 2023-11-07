@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">David Lu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">David Lu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="David Lu profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">David Lu</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/David_Lu.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/david-lin-yi-lu/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/david5010'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Data Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/uci.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>University of California, Irvine</h3>
+              <p>B.S. Computer Science, Statistics<br>2020-2024</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi there! I'm <strong>David</strong>, a 4th-year Computer Science and Statistics student at the University of California, Irvine.
+              Alongside my studies, I work as a <strong>Data Scientist</strong> at <a href="https://www.edf-innovation-lab.com/" style="color:rgb(100,136,234);">EDF Innovation Lab</a>, 
+              focused on building predictive models for electricity demand using climate data.
+              I'm also part of <a href="https://www.deepdatalab.org/" style="color:rgb(100,136,234);">Deep Data Lab</a>  where I conduct research on Normalized Metered Energy Consumption (NMEC), 
+              and Baldi Lab where I research on Antenna Array Optimization using Deep Learning.
+              Some of my past experiences include being a <strong>Software and Data Engineer Intern</strong> at <a href="https://www.lyrid.io/" style="color:rgb(100,136,234);">Lyrid</a> (1 year)
+              and a <strong>Data Scientist Intern</strong> at <a href="http://www.yestarcorp.com/about.aspx?cid=399" style="color:rgb(100,136,234);">Yes! Star</a> (1 year).
+              Please feel free to browse through my website where you can learn more about my <strong><a href="#experience">experiences</a></strong>,
+              <strong><a href="#research">research</a></strong>, <strong>and <a href="#projects">projects</a></strong>.
+            </p>
+            <p style="margin-top: 1em;">
+              I'm currently looking for a full-time job, interested in <strong>Energy Trading, Data Science and Engineering, or Software Engineering</strong>!
+              If my experiences align with the needs of your company, or if you are interested in chatting with me, please reach out to me at 
+              <a href="mailto:david.linyi.lu@gmail.com" style="color: rgb(100,136,234);">david.linyi.lu@gmail.com</a> or connect with me on 
+              <a href="https://www.linkedin.com/in/david-lin-yi-lu/" style="color: rgb(100,136,234)">LinkedIn</a>!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">ML-Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/skill-icons/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/pytorch.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/pandas.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/numpy.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/tf.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/xarray.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Xarray</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/dask.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dask</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/airflow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Apache Airflow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skill-icons/spark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Apache Spark</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="experience-entry">
+              <img src="./assets/edf.png" alt="Company Logo" class="company-logo" />
+              <div class="experience-text">
+                <h3 class="role">Data Scientist</h3>
+                <p class="company-name">EDF Innovation Lab</p>
+              </div>
+              <span class="date">Sept 2022 - Present</span>
+            </div>
+            <div class="experience-entry">
+              <img src="./assets/lyrid.png" alt="Company Logo" class="company-logo" />
+              <div class="experience-text">
+                <h3 class="role">Software and Data Engineer Intern</h3>
+                <p class="company-name">Lyrid</p>
+              </div>
+              <span class="date">Dec 2021 - Sept 2022</span>
+            </div>
+            <div class="experience-entry">
+              <img src="./assets/yesStar.png" alt="Company Logo" class="company-logo" />
+              <div class="experience-text">
+                <h3 class="role">Data Scientist Intern</h3>
+                <p class="company-name">Yes! Star Corporation</p>
+              </div>
+              <span class="date">Jun 2019 - Jul 2020</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#research'"
+      />
+    </section>
+    <section id="research">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Research</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nmec_proj.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Normalized-Metered Energy Consumption</h2>
+            <a href="https://www.deepdatalab.org/"><h4 style="color: grey;">Deep Data Lab</h4></a>
+            <p class="project-subtitle">
+              Imagine if we could peek into a crystal ball and see the hidden stories of energy in our homes. 
+              That's where my research on Normalized Metered Energy Consumption (NMEC) comes into play—it's like a time machine for electricity usage.
+            </p>
+            <p class="project-subtitle">
+              NMEC isn't just a fancy acronym; it's the heartbeat of understanding how much energy we could save if we lived a little differently.
+               Think of it as a behind-the-scenes look at the 'what-ifs' of our daily power habits.
+            </p>
+            <p class="project-subtitle">
+              The project is still ongoing with <a href="https://www.harding.ai/" style="color: rgb(100,136,234)">Prof. Matthew C. Harding</a>, 
+              although you can preview some of the progress on my GitHub!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/david5010/NMEC-Using-DL'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ant-arr.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Antenna Array Optimization using Deep-Learning</h2>
+            <h4 style="color: grey;">Baldi Lab</h4>
+            <p class="project-subtitle">
+              Think of antenna arrays as a team of antennas working in unison to send and receive signals with crystal-clear precision. 
+              However, when you're dealing with hundreds of them, it's like trying to align a choir of voices without 
+              a conductor; they can easily start to interfere with each other instead of working together.
+            </p>
+            <p class="project-subtitle">
+              By leveraging PyTorch, I've engineered deep learning models that can tackle this complexity with ease. 
+              These models act as the ultimate conductors for the modern digital orchestra, expertly tuning arrays to improve, 
+              and ensuring they perform in harmony!
+            </p>
+            <p class="project-subtitle">
+              The current research is ongoing, although you can preview a draft of the paper and the code below!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/david5010/antenna_arrays'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/pdfs/ant-arrays.pdf')"
+                >
+                Draft
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/aq.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Predicting Air Quality using Graphical Models</h2>
+            <p class="project-subtitle">
+              The battle with air pollution is a complex puzzle of ever-changing patterns. To forecast the ebb and flow of this urban haze, I turn to the analytical 
+              precision of graphical models. Bayesian Networks (BN) and Markov Random Fields (MRF) are my chosen tools, adept at revealing 
+              the hidden dependencies and interactions within pollution data.
+            </p>
+            <p class="project-subtitle">
+              With BNs, we begin by decoding the correlations in pollution 
+              levels, identifying how different areas influence one another. We then sharpen our focus with MRFs, examining the intricate web of 
+              interactions between these regions.
+            </p>
+            <p class="project-subtitle">
+              Feel free to take a look at the code and analysis where I used PGMpy and Numpy, as well as a draft of the paper!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/david5010/Graphical-Model-for-Pollution-Data'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/pdfs/graphical-models.pdf')"
+                >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/lpdc.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Low-Density Parity-Check Code</h2>
+            <p class="project-subtitle">
+              In the digital symphony of data transmission, each bit is a note. Low-Density Parity-Check (LDPC) codes ensure that every note reaches its destination without distortion,
+              preserving the integrity of the entire melody. When corruption is bound to happen in the transmission of data, LPDC helps correct the mistakes!
+            </p>
+            <p class="project-subtitle">
+              Imagine receiving a photo from a friend, only to find it marred by corrupted pixels. LDPC codes come to the rescue, seamlessly
+               restoring the image to its pristine state. In my project, using PGMpy, I crafted factor graphs and applied the sum-product message
+                passing algorithm, enabling these codes to identify and fix errors with remarkable precision, ensuring the 
+                photo you see is as perfect as intended. 
+            </p>
+            <p class="project-subtitle">
+              The backend of this project is complete, but I am planning on adding a blog and a UI component for you try it out!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Coming Soon!
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/climate.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather-Driven Electricity Pricing Tool</h2>
+            <p class="project-subtitle">
+              This project presents a pragmatic approach to decoding the interplay between weather conditions and energy economics. 
+              By integrating real-time weather and grid data, we aim to forecast electricity prices with enhanced accuracy. 
+              The backbone of this system is a robust workflow managed by Airflow, complemented by the parallel processing prowess of Dask. 
+              PyTorch's deep learning capabilities are at the core of our predictive model, refining our forecasts to adapt to the volatile nature of 
+              energy markets.
+            </p>
+            <p class="project-subtitle">
+              This project is still in its early stages, but I plan on releasing the code soon and a demo!
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Coming Soon!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:david.linyi.lu@gmail.com">david.linyi.lu@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/david-lin-yi-lu/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 David Lu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
