@@ -396,11 +396,13 @@ article .icon {
   height: auto; /* or width: auto; This will maintain the aspect ratio */
   object-fit: contain; /* This will ensure the image is fully visible */
   margin-right: 10px; /* Adjust as needed */
+  flex-basis: 20%;
 }
 
 
 .experience-text {
   flex-grow: 1;
+  flex-basis: 20%;
 }
 
 .role {
@@ -415,7 +417,8 @@ article .icon {
 
 .date {
   margin-left: auto; /* Pushes the date to the right */
-  white-space: nowrap;
+  flex-basis: 20%;
+  white-space: wrap;
 }
 
 
@@ -438,9 +441,23 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 500px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+/* Example of a media query for screens smaller than 600px wide */
+@media (max-width: 600px) {
+  .project-img {
+    border-radius: 1rem;
+  }
+}
+
+/* Example of a media query for screens smaller than 400px wide */
+@media (max-width: 400px) {
+  .project-img {
+    border-radius: 0.5rem;
+  }
 }
 
 .project-title {
